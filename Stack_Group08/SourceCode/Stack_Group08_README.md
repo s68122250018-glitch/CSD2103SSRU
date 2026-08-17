@@ -29,8 +29,8 @@ stack-algorithm-group08/
 ├── src/
 │   ├── Main.java
 │   ├── NGEAlgorithm.java
-│   └── experiments/
-│       └── Experiment.java
+│   └──  Experiment.java
+│   
 │
 ├── test/
 ├── data/
