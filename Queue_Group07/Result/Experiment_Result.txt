@@ -1,0 +1,42 @@
+Ride-Hailing Driver Assignment
+Queue Algorithm Design & Analysis with Java
+Group 7
+
+Experiment Result
+=================
+
+กำหนดให้จำนวนคนขับ m = n/2
+ใช้ System.nanoTime()
+มี warm-up round ก่อนจับเวลา
+ใช้ seed คงที่ในการสุ่มระยะทาง
+วัดค่าเฉลี่ยจาก 5 รอบ
+
+n = 100, m = 50
+Algorithm A (FIFO): 0.067 ms
+Algorithm B (Nearest): 0.369 ms
+
+n = 1,000, m = 500
+Algorithm A (FIFO): 0.327 ms
+Algorithm B (Nearest): 3.704 ms
+
+n = 10,000, m = 5,000
+Algorithm A (FIFO): 0.987 ms
+Algorithm B (Nearest): 316.931 ms
+
+n = 50,000, m = 25,000
+Algorithm A (FIFO): 1.362 ms
+Algorithm B (Nearest): 8057.957 ms
+
+Conclusion
+==========
+
+Algorithm A (FIFO) ทำงานได้เร็วกว่า Algorithm B
+โดยเฉพาะเมื่อจำนวนข้อมูลมีขนาดใหญ่
+
+Algorithm B (Nearest Driver Matching) ใช้เวลาในการประมวลผล
+มากกว่า แต่มีข้อดีด้านการเลือกคนขับที่มีระยะทางใกล้ที่สุด
+และสามารถลดระยะทางรวมได้
+
+ดังนั้นไม่มี Algorithm ใดดีที่สุดในทุกกรณี
+การเลือกใช้งานควรพิจารณาระหว่าง Fairness และ Efficiency
+ตามเป้าหมายของระบบ
